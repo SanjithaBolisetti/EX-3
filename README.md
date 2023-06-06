@@ -1,9 +1,13 @@
-IMPLEMENTATION OF SLIDING WINDOW PROTOCOL EXP: 3 DATE:22-03-2023 
+# IMPLEMENTATION OF SLIDING WINDOW PROTOCOL 
 
-AIM : 
+# EXP: 3 
+
+# DATE:22-03-2023 
+
+# AIM : 
 To write a python program to perform sliding window protocol 
 
-ALGORITHM :
+# ALGORITHM :
 
 1.Start the program.
 
@@ -17,7 +21,7 @@ ALGORITHM :
 
 6.Stop the program 
 
-CLIENT PROGRAM : 
+# CLIENT PROGRAM : 
 ```import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -37,7 +41,7 @@ while True:
  	    print(ack)
     	i+=s
 ```
-SERVER PROGRAM : 
+# SERVER PROGRAM : 
 ```import socket
 s=socket.socket()
 s.connect(('localhost',8000)) 
@@ -45,11 +49,11 @@ while True:
   print(s.recv(1024).decode()) 
   s.send("acknowledgement recieved from the server".encode())
 ```
-SERVER OUTPUT:
+# SERVER OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-3/assets/119393633/c29e7e2e-0c8b-477a-a7c0-cb47ca934d63)
 
-CLIENT OUTPUT:
+# CLIENT OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-3/assets/119393633/9a074f1c-3bdb-4e66-b3ad-3a11fc739637)
 
-RESULT:
+# RESULT:
 Thus, python program to perform stop and wait protocol was successfully executed.
